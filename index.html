@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jeremiah Ruben — Full-Stack Software Developer. Fresh graduate specializing in modern web technologies, backend systems, and cloud infrastructure." />
+  <meta name="keywords" content="software developer, full-stack developer, backend developer, portfolio, web development" />
+  <meta property="og:title" content="Jeremiah Ruben — Software Developer" />
+  <meta property="og:description" content="Fresh graduate software developer specializing in full-stack development." />
+  <meta property="og:type" content="website" />
+  <title>Jeremiah Ruben — Software Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">JR<span class="accent">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ──────────────────────────────────────────────── -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-label reveal">Available for opportunities</p>
+        <h1 class="hero-name reveal">
+          <span class="name-line">Jeremiah</span>
+          <span class="name-line accent-stroke">Ruben</span>
+        </h1>
+        <p class="hero-role reveal">
+          <span class="role-tag">Full-Stack</span>
+          <span class="role-separator">—</span>
+          <span class="role-tag">Backend</span>
+          <span class="role-separator">—</span>
+          <span class="role-tag">Frontend</span>
+        </p>
+        <p class="hero-intro reveal">
+            Software Dev graduate building scalable systems and clean interfaces. 
+          I turn complex problems into elegant, performant software.
+        </p>
+        <div class="hero-stack reveal">
+          <span class="stack-chip">TypeScript</span>
+          <span class="stack-chip">React</span>
+          <span class="stack-chip">Node.js</span>
+          <span class="stack-chip">Python</span>
+          <span class="stack-chip">PostgreSQL</span>
+          <span class="stack-chip">Docker</span>
+        </div>
+        <div class="hero-ctas reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="/resume.pdf" class="btn btn-outline" download>Download CV</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-socials reveal">
+          <a href="https://github.com/jeremy1403" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jeremiah-ruben-06936227b/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:jeremiahruben03@gmail.com" class="social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar reveal">
+        <div class="avatar-frame">
+          <div class="avatar-placeholder" aria-label="Profile photo">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="60" cy="45" r="22" fill="currentColor" opacity="0.3"/>
+              <path d="M20 105c0-22.09 17.91-40 40-40s40 17.91 40 40" stroke="currentColor" stroke-width="2" opacity="0.3" fill="none"/>
+            </svg>
+          </div>
+          <div class="avatar-badge">Open to Work</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─────────────────────────────────────────────── -->
+  <section class="section about" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-lead">
+            I'm a Software Systems Development graduate passionate about building software that scales. 
+            My focus is on clean architecture, developer experience, and shipping things that actually work.
+          </p>
+          <p class="about-body">
+            During university, I fell in love with the intersection of systems design and user-facing products. 
+            I've built everything from RESTful APIs serving thousands of requests to interactive UIs that 
+            feel native — and I genuinely enjoy both ends of the stack.
+          </p>
+          <p class="about-body">
+            Currently deepening my knowledge in distributed systems, cloud infrastructure, and 
+            building with AI APIs. I'm looking for a team where I can ship real products and 
+            grow fast alongside experienced engineers.
+          </p>
+        </div>
+        <div class="about-facts reveal">
+          <div class="fact-card">
+            <div class="fact-icon" aria-hidden="true">🎓</div>
+            <div class="fact-content">
+              <h3>Education</h3>
+              <p>B.Sc. Software Systems Development<br/><span class="accent">Tunku Abdul Rahman University of Management and Technology (TAR UMT)</span></p>
+              <span class="fact-meta">Graduated 2026 · GPA 3.1/4.0</span>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon" aria-hidden="true">🔍</div>
+            <div class="fact-content">
+              <h3>Interests</h3>
+              <p>Backend Architecture · API Design<br/>Cloud Infrastructure · DevOps</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon" aria-hidden="true">📚</div>
+            <div class="fact-content">
+              <h3>Currently Learning</h3>
+              <p>Kubernetes · Go · System Design<br/>AWS Solutions Architect</p>
+            </div>
+          </div>
+          <div class="fact-card">
+            <div class="fact-icon" aria-hidden="true">🎯</div>
+            <div class="fact-content">
+              <h3>Career Goal</h3>
+              <p>Build systems at scale in a product-driven team where engineering quality matters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─────────────────────────────────────────── -->
+  <section class="section projects" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">Things I've built that I'm proud of</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card featured reveal" aria-label="DevFlow project">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="--hue: 200;" aria-hidden="true">
+              <div class="preview-pattern"></div>
+              <div class="preview-label">FEATURED</div>
+            </div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/alexchen/devflow" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">DevFlow</h3>
+            <p class="project-desc">
+              A real-time collaborative code review platform where teams can annotate, discuss, 
+              and merge PRs with inline comments and AI-assisted suggestions.
+            </p>
+            <ul class="project-features">
+              <li>WebSocket-based real-time collaboration for 100+ concurrent users</li>
+              <li>AI-powered code review suggestions using OpenAI API</li>
+              <li>OAuth2 GitHub integration with webhook event processing</li>
+            </ul>
+            <div class="project-challenge">
+              <span class="challenge-label">Challenge solved:</span>
+              Designed a CRDT-based conflict resolution system to handle concurrent edits without locking.
+            </div>
+            <div class="project-stack">
+              <span>React</span><span>Node.js</span><span>WebSockets</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" aria-label="ShelfAI project">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="--hue: 160;" aria-hidden="true">
+              <div class="preview-pattern"></div>
+            </div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/jeremy1403/Fitness-Wellness-System" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">ShelfAI</h3>
+            <p class="project-desc">
+              Personalized book recommendation engine using collaborative filtering 
+              and NLP to surface titles based on reading history and preferences.
+            </p>
+            <ul class="project-features">
+              <li>ML recommendation pipeline with 87% user satisfaction rate</li>
+              <li>REST API serving 500+ daily active users</li>
+              <li>Automated ingestion from Google Books & Open Library APIs</li>
+            </ul>
+            <div class="project-challenge">
+              <span class="challenge-label">Challenge solved:</span>
+              Solved cold-start problem using content-based filtering until collaborative data was sufficient.
+            </div>
+            <div class="project-stack">
+              <span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>PostgreSQL</span><span>Next.js</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" aria-label="LogLens project">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="--hue: 40;" aria-hidden="true">
+              <div class="preview-pattern"></div>
+            </div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/alexchen/loglens" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">LogLens</h3>
+            <p class="project-desc">
+              Lightweight self-hosted log aggregation dashboard for small teams — 
+              a simpler alternative to expensive observability tools.
+            </p>
+            <ul class="project-features">
+              <li>Ingests 10k+ log lines/sec via efficient buffer pipeline</li>
+              <li>Full-text search with regex and time-range filtering</li>
+              <li>Alert rules with Slack/email webhook notifications</li>
+            </ul>
+            <div class="project-challenge">
+              <span class="challenge-label">Challenge solved:</span>
+              Designed memory-mapped file storage to reduce disk I/O by 60% vs naive append-only logs.
+            </div>
+            <div class="project-stack">
+              <span>Go</span><span>React</span><span>ClickHouse</span><span>Prometheus</span><span>Docker</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" aria-label="PocketBudget project">
+          <div class="project-preview">
+            <div class="project-preview-bg" style="--hue: 280;" aria-hidden="true">
+              <div class="preview-pattern"></div>
+            </div>
+            <div class="project-links-overlay">
+              <a href="https://github.com/alexchen/pocketbudget" class="icon-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">PocketBudget</h3>
+            <p class="project-desc">
+              Mobile-first personal finance tracker with automatic transaction categorisation 
+              and monthly spending trend analytics.
+            </p>
+            <ul class="project-features">
+              <li>OCR-powered receipt scanning using Tesseract.js</li>
+              <li>Bank statement CSV importer with smart category tagging</li>
+              <li>Progressive Web App with offline-first IndexedDB sync</li>
+            </ul>
+            <div class="project-challenge">
+              <span class="challenge-label">Challenge solved:</span>
+              Built a custom sync queue to handle offline mutations and conflict resolution on reconnect.
+            </div>
+            <div class="project-stack">
+              <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>SQLite</span><span>Tailwind</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ────────────────────────────────────────────── -->
+  <section class="section skills" id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">⌨️</span> Languages
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag primary">TypeScript</span>
+            <span class="skill-tag primary">Python</span>
+            <span class="skill-tag primary">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Go</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Bash</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">🖥️</span> Frontend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag primary">React</span>
+            <span class="skill-tag primary">Next.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Vite</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">⚙️</span> Backend
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Node.js</span>
+            <span class="skill-tag primary">FastAPI</span>
+            <span class="skill-tag primary">Express</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">GraphQL</span>
+            <span class="skill-tag">WebSockets</span>
+            <span class="skill-tag">tRPC</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">🗄️</span> Databases
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag primary">PostgreSQL</span>
+            <span class="skill-tag primary">Redis</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Prisma</span>
+            <span class="skill-tag">SQLAlchemy</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">🛠️</span> Tools & DevOps
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag primary">Docker</span>
+            <span class="skill-tag primary">Git</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Terraform</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon" aria-hidden="true">🧪</span> Testing
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Jest</span>
+            <span class="skill-tag">Vitest</span>
+            <span class="skill-tag">Pytest</span>
+            <span class="skill-tag">Playwright</span>
+            <span class="skill-tag">Supertest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ───────────────────────────────────────── -->
+  <section class="section experience" id="experience" aria-label="Experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <article class="timeline-item reveal" aria-label="Software Engineer Intern at TechCorp">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer Intern</h3>
+                <p class="timeline-org">TechCorp Solutions — <span class="accent">Kuala Lumpur</span></p>
+              </div>
+              <span class="timeline-date">Jun 2023 – Dec 2023</span>
+            </div>
+            <div class="timeline-stack">
+              <span>Node.js</span><span>React</span><span>PostgreSQL</span><span>AWS Lambda</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed and shipped 3 REST API endpoints used by 2,000+ daily active users, reducing response latency by 35% through query optimisation</li>
+              <li>Migrated legacy jQuery frontend components to React, improving Lighthouse performance score from 64 → 91</li>
+              <li>Built an automated reporting pipeline with AWS Lambda + S3 that saved 8 hours/week of manual work for the ops team</li>
+              <li>Collaborated in an Agile team of 8 engineers; contributed to sprint planning, code reviews, and post-mortems</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal" aria-label="Final Year Project">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Final Year Project — DevFlow</h3>
+                <p class="timeline-org">University of Technology — <span class="accent">Academic</span></p>
+              </div>
+              <span class="timeline-date">Jan 2024 – May 2024</span>
+            </div>
+            <div class="timeline-stack">
+              <span>React</span><span>Node.js</span><span>WebSockets</span><span>PostgreSQL</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Architected and led development of a real-time collaborative code review platform as sole developer</li>
+              <li>Designed database schema handling 50+ entity relationships; achieved sub-100ms API response times</li>
+              <li>Awarded <strong>Best Final Year Project</strong> in the Faculty of Computing 2024 cohort</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal" aria-label="Open Source Contributions">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Open Source Contributor</h3>
+                <p class="timeline-org">Various Projects — <span class="accent">GitHub</span></p>
+              </div>
+              <span class="timeline-date">2022 – Present</span>
+            </div>
+            <div class="timeline-stack">
+              <span>TypeScript</span><span>Python</span><span>Documentation</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Contributed bug fixes and features to 5+ open source projects with 100k+ collective GitHub stars</li>
+              <li>Authored 3 npm packages with 800+ total weekly downloads</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESUME ─────────────────────────────────────────────── -->
+  <section class="section resume-section" id="resume" aria-label="Resume">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">05</span>
+        <h2 class="section-title">Resume</h2>
+      </div>
+      <div class="resume-card reveal">
+        <div class="resume-preview" aria-label="Resume preview thumbnail">
+          <div class="resume-doc-lines" aria-hidden="true">
+            <div class="resume-doc-header"></div>
+            <div class="resume-doc-line w80"></div>
+            <div class="resume-doc-line w60"></div>
+            <div class="resume-doc-divider"></div>
+            <div class="resume-doc-line w90"></div>
+            <div class="resume-doc-line w70"></div>
+            <div class="resume-doc-line w85"></div>
+            <div class="resume-doc-divider"></div>
+            <div class="resume-doc-line w75"></div>
+            <div class="resume-doc-line w65"></div>
+          </div>
+        </div>
+        <div class="resume-info">
+          <h3>Jeremiah Ruben — Software Developer</h3>
+          <p>One page · Updated May 2024 · PDF format</p>
+          <p class="resume-desc">Covers education, experience, projects, and skills. Optimised for ATS systems and human readers.</p>
+          <a href="/resume.pdf" class="btn btn-primary" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-number">06</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-sub">I'm actively seeking full-time software engineering roles. Let's talk.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-lead">
+            Whether you have a role to discuss, a project to collaborate on, or just want to say hello — 
+            my inbox is open.
+          </p>
+          <div class="contact-items">
+            <a href="mailto:jeremiahruben03@gmail.com" class="contact-item">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">alex@example.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/alexchen" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">linkedin.com/in/alexchen</span>
+              </div>
+            </a>
+            <a href="https://github.com/alexchen" class="contact-item" target="_blank" rel="noopener noreferrer">
+              <div class="contact-item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/alexchen</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job opportunity / Collaboration / Hello" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role, project, or just say hi..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          Built by <span class="accent">Jeremiah Ruben</span> with care · 
+          <a href="https://github.com/alexchen/portfolio" target="_blank" rel="noopener noreferrer">View source</a>
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/alexchen" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/alexchen" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LI</a>
+          <a href="mailto:alex@example.com" aria-label="Email">EM</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
