@@ -32,12 +32,6 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-        </li>
       </ul>
     </div>
   </nav>
@@ -60,8 +54,8 @@
           <span class="role-tag">Frontend</span>
         </p>
         <p class="hero-intro reveal">
-            Software Dev graduate building scalable systems and clean interfaces. 
-          I turn complex problems into elegant, performant software.
+            Software Systems Development graduate focused on cloud, backend systems, and reliable software.
+             I build, deploy, and improve applications from development to production.
         </p>
         <div class="hero-stack reveal">
           <span class="stack-chip">TypeScript</span>
@@ -119,18 +113,19 @@
       <div class="about-grid">
         <div class="about-text reveal">
           <p class="about-lead">
-            I'm a Software Systems Development graduate passionate about building software that scales. 
-            My focus is on clean architecture, developer experience, and shipping things that actually work.
+            I'm a Software Systems Development graduate with a strong interest in cloud engineering, backend systems, and DevOps.
+             I enjoy understanding how applications work beyond the code — from development and containerization to deployment,
+              networking, and infrastructure.
           </p>
           <p class="about-body">
-            During university, I fell in love with the intersection of systems design and user-facing products. 
-            I've built everything from RESTful APIs serving thousands of requests to interactive UIs that 
-            feel native — and I genuinely enjoy both ends of the stack.
+            Throughout university and my projects, I've worked with REST APIs, databases, modern web technologies, Docker, Git, and CI/CD workflows. 
+            I'm now expanding my knowledge of AWS, Linux, networking, cloud infrastructure, and deployment practices to build applications that are 
+            reliable, scalable, and maintainable.
           </p>
           <p class="about-body">
-            Currently deepening my knowledge in distributed systems, cloud infrastructure, and 
-            building with AI APIs. I'm looking for a team where I can ship real products and 
-            grow fast alongside experienced engineers.
+            I enjoy solving technical problems, troubleshooting systems, and learning how different pieces of technology work together.
+             I'm looking for a junior role where I can contribute with my software development background while continuing to
+              grow into a strong cloud and infrastructure engineer.
           </p>
         </div>
         <div class="about-facts reveal">
@@ -160,7 +155,7 @@
             <div class="fact-icon" aria-hidden="true">🎯</div>
             <div class="fact-content">
               <h3>Career Goal</h3>
-              <p>Build systems at scale in a product-driven team where engineering quality matters</p>
+              <p>Build and operate reliable cloud-based systems while growing into a strong Cloud/DevOps Engineer.</p>
             </div>
           </div>
         </div>
@@ -198,21 +193,22 @@
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">DevFlow</h3>
+            <h3 class="project-title">QR Menu System</h3>
             <p class="project-desc">
               A full-stack digital menu system for restaurants. Customers scan a QR code at their table and browse a visual menu on their phone. Restaurant owners manage everything through a secure admin panel.
             </p>
             <ul class="project-features">
-              <li>WebSocket-based real-time collaboration for 100+ concurrent users</li>
-              <li>AI-powered code review suggestions using OpenAI API</li>
-              <li>OAuth2 GitHub integration with webhook event processing</li>
+              <li>Live Digital Menu — Scan QR code to access menu instantly</li>
+              <li>Real-Time Admin Control — Admin panel for managing menu items and QR code generation.</li>
+              <li></li>
             </ul>
             <div class="project-challenge">
               <span class="challenge-label">Challenge solved:</span>
-              Designed a CRDT-based conflict resolution system to handle concurrent edits without locking.
+              Database connectivity during deployment.
             </div>
             <div class="project-stack">
-              <span>React</span><span>Node.js</span><span>WebSockets</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+              <span>Next.js</span><span>TypeScript</span><span>NestJS</span><span>PostgreSQL(Neon)</span><span>Cloudinary</span><span>REST API</span>
+              <span>Vercel(Frontend Deployment)</span><span>Render(Backend Deployment)</span>
             </div>
           </div>
         </article>
@@ -235,22 +231,24 @@
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">ShelfAI</h3>
+            <h3 class="project-title">URL Shortener</h3>
             <p class="project-desc">
-              Personalized book recommendation engine using collaborative filtering 
-              and NLP to surface titles based on reading history and preferences.
+              A full-stack URL shortener built to gain hands-on experience with production AWS cloud infrastructure.
+               Users can register, shorten long URLs into shareable short links, and track click activity through a personal dashboard — 
+               all backed by a containerized architecture deployed on live AWS infrastructure.
             </p>
             <ul class="project-features">
-              <li>ML recommendation pipeline with 87% user satisfaction rate</li>
-              <li>REST API serving 500+ daily active users</li>
-              <li>Automated ingestion from Google Books & Open Library APIs</li>
+              <li>Secure user authentication with JWT-based sessions and bcrypt password hashing</li>
+              <li>Custom short-link generation with click tracking</li>
+              <li>Dashboard for managing all shortened links and viewing engagement at a glance</li>
             </ul>
             <div class="project-challenge">
               <span class="challenge-label">Challenge solved:</span>
-              Solved cold-start problem using content-based filtering until collaborative data was sufficient.
+              Implemented free, auto-renewing HTTPS on a bare IP-based deployment (no owned domain) by combining a free DDNS subdomain with Let's Encrypt's HTTP-01
             </div>
             <div class="project-stack">
-              <span>Python</span><span>FastAPI</span><span>scikit-learn</span><span>PostgreSQL</span><span>Next.js</span>
+              <span>Node.js</span><span>Express</span><span>TypeScript</span><span>MySQL</span><span>Next.js</span><span>Docker</span>
+              <span>AWS EC2</span><span>AWS RDS</span><span>AWS ECR</span><span>AWS IAM</span><span>GitHub Actions</span><span>Nginx</span>
             </div>
           </div>
         </article>
@@ -273,22 +271,24 @@
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">LogLens</h3>
+            <h3 class="project-title">Portfolio Site</h3>
             <p class="project-desc">
-              Lightweight self-hosted log aggregation dashboard for small teams — 
-              a simpler alternative to expensive observability tools.
+              A personal portfolio site showcasing my projects and background, built and deployed entirely on AWS using a serverless, static-hosting architecture 
+              — chosen deliberately to gain experience with a different AWS deployment pattern than a traditional server-based app.
             </p>
             <ul class="project-features">
-              <li>Ingests 10k+ log lines/sec via efficient buffer pipeline</li>
-              <li>Full-text search with regex and time-range filtering</li>
-              <li>Alert rules with Slack/email webhook notifications</li>
+              <li>Fully static site served globally through a CDN for fast load times anywhere</li>
+              <li>Secured with a free, trusted SSL certificate on a custom domain</li>
+              <li>Automatic deployment pipeline — every code change goes live within minutes of being pushed</li>
             </ul>
             <div class="project-challenge">
               <span class="challenge-label">Challenge solved:</span>
-              Designed memory-mapped file storage to reduce disk I/O by 60% vs naive append-only logs.
+              Set up least-privilege CI credentials scoped to only the specific S3 bucket and CloudFront distribution needed, 
+              rather than granting broad account access to the deployment pipeline
             </div>
             <div class="project-stack">
-              <span>Go</span><span>React</span><span>ClickHouse</span><span>Prometheus</span><span>Docker</span>
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AWS S3</span><span>AWS CloudFront</span><span>AWS ACM</span>
+              <span>AWS IAM</span><span>GitHub Actions</span>
             </div>
           </div>
         </article>
@@ -307,22 +307,22 @@
             </div>
           </div>
           <div class="project-body">
-            <h3 class="project-title">PocketBudget</h3>
+            <h3 class="project-title">Fitness & Wellness System</h3>
             <p class="project-desc">
-              Mobile-first personal finance tracker with automatic transaction categorisation 
-              and monthly spending trend analytics.
+              Fitness & wellness platform with class booking, membership management, trainer scheduling, and attendance tracking.
             </p>
             <ul class="project-features">
-              <li>OCR-powered receipt scanning using Tesseract.js</li>
-              <li>Bank statement CSV importer with smart category tagging</li>
-              <li>Progressive Web App with offline-first IndexedDB sync</li>
+              <li>Class Booking — Members can book and cancel fitness classes.</li>
+              <li>Membership Management — Different plans provide different booking limits and privileges</li>
+              <li>Attendance Tracking — Trainers can mark bookings as attended or no-show.</li>
             </ul>
             <div class="project-challenge">
               <span class="challenge-label">Challenge solved:</span>
-              Built a custom sync queue to handle offline mutations and conflict resolution on reconnect.
+              Implementing complex booking rules while keeping the system maintainable and preventing invalid booking states.
             </div>
             <div class="project-stack">
-              <span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>SQLite</span><span>Tailwind</span>
+              <span>Docker</span><span>Next.js</span><span>TypeScript</span><span>React</span><span>PHP</span><span>Laravel</span><span>Redis</span>
+              <span>MySQL</span>
             </div>
           </div>
         </article>
@@ -434,24 +434,22 @@
       </div>
       <div class="timeline">
 
-        <article class="timeline-item reveal" aria-label="Software Engineer Intern at TechCorp">
+        <article class="timeline-item reveal" aria-label="Software Developer Intern at ByteToc Computing">
           <div class="timeline-marker" aria-hidden="true"></div>
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Software Engineer Intern</h3>
-                <p class="timeline-org">TechCorp Solutions — <span class="accent">Kuala Lumpur</span></p>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <p class="timeline-org">ByteToc Computing — <span class="accent">Subang Jaya</span></p>
               </div>
-              <span class="timeline-date">Jun 2023 – Dec 2023</span>
+              <span class="timeline-date">Nov 2022 – Feb 2023</span>
             </div>
             <div class="timeline-stack">
-              <span>Node.js</span><span>React</span><span>PostgreSQL</span><span>AWS Lambda</span>
+              <span>Node.js</span><span>HTML/CSS</span><span>PHP</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Developed and shipped 3 REST API endpoints used by 2,000+ daily active users, reducing response latency by 35% through query optimisation</li>
-              <li>Migrated legacy jQuery frontend components to React, improving Lighthouse performance score from 64 → 91</li>
-              <li>Built an automated reporting pipeline with AWS Lambda + S3 that saved 8 hours/week of manual work for the ops team</li>
-              <li>Collaborated in an Agile team of 8 engineers; contributed to sprint planning, code reviews, and post-mortems</li>
+              <li>Designed and implemented a responsive web interface using HTML, CSS, and PHP for client projects</li>
+              <li>Assisted in debugging and maintaining existing web applications</li>
             </ul>
           </div>
         </article>
@@ -461,18 +459,19 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Final Year Project — DevFlow</h3>
-                <p class="timeline-org">University of Technology — <span class="accent">Academic</span></p>
+                <h3 class="timeline-role">Software QA Tester Intern</h3>
+                <p class="timeline-org">Cardbiz Group of Companies — <span class="accent">Damansara</span></p>
               </div>
-              <span class="timeline-date">Jan 2024 – May 2024</span>
+              <span class="timeline-date">June 2025 – Dec 2025</span>
             </div>
             <div class="timeline-stack">
               <span>React</span><span>Node.js</span><span>WebSockets</span><span>PostgreSQL</span>
             </div>
             <ul class="timeline-bullets">
-              <li>Architected and led development of a real-time collaborative code review platform as sole developer</li>
-              <li>Designed database schema handling 50+ entity relationships; achieved sub-100ms API response times</li>
-              <li>Awarded <strong>Best Final Year Project</strong> in the Faculty of Computing 2024 cohort</li>
+              <li>Created test cases and performed functional testing, smoke testing and retesting for multiple client projects</li>
+              <li>Performed load/performance testing</li>
+              <li>Created and updated documents — User Manuals, User Requirement Specification (URS), UAT Reports, and flowcharts.</li>
+              <li>Gained hands-on experience in software testing, project coordination and technical documentation</li>
             </ul>
           </div>
         </article>
