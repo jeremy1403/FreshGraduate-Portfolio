@@ -166,7 +166,7 @@
 
       // ── Option B: mailto fallback (works without a backend) ─
       const mailto =
-        `mailto:alex@example.com` +
+        `mailto:jeremiahruben03@gmail.com` +
         `?subject=${encodeURIComponent(subject)}` +
         `&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
 
